@@ -9,18 +9,38 @@
     "enableCommands": [
       {
         "commands": [
+          "tempmail",
           "ai",
-          "dictionary",
           "help",
-          "hercai",
-          "insult",
+          "out",
+          "poli"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 506
+  },
+  {
+    "userid": "61564442477942",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "baybayin",
+          "help",
           "music",
           "out",
           "poli",
-          "sim",
-          "teach",
-          "tid",
-          "trans",
           "unsend"
         ]
       },
@@ -31,6 +51,64 @@
         ]
       }
     ],
-    "time": 0
+    "time": 506
+  },
+  {
+    "userid": "61564442477942",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "baybayin",
+          "help",
+          "music",
+          "out",
+          "poli",
+          "tiktok",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 506
+  },
+  {
+    "userid": "61564983274250",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "baybayin",
+          "help",
+          "music",
+          "out",
+          "poli",
+          "tiktok",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 138
   }
 ]
