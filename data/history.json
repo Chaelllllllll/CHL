@@ -1,0 +1,36 @@
+[
+  {
+    "userid": "61564442477942",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "dictionary",
+          "help",
+          "hercai",
+          "insult",
+          "music",
+          "out",
+          "poli",
+          "sim",
+          "teach",
+          "tid",
+          "trans",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 0
+  }
+]
