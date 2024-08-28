@@ -4,7 +4,7 @@ module.exports.config = {
   role: 0,
   hasPrefix: true,
   credits: "Chael",
-  description: "generate image from polination.",
+  description: "Generate image from polination.",
   usages: "poli [prompt]",
   cooldowns: 5,
   
@@ -27,7 +27,7 @@ module.exports.run = async ({ api, event, args }) => {
   fs.writeFileSync(path, Buffer.from(poli, "utf-8"));
     setTimeout(function() {
   api.sendMessage({
-    body: "Download Successfully!",
+    body: "Result",
     attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path));
     }, 5000);
     } catch (error) {
