@@ -64,14 +64,14 @@ module.exports.run = async function({
           cooldown,
           hasPrefix
         } = command;
-        const roleMessage = role !== undefined ? (role === 0 ? '➛ Permission: user' : (role === 1 ? '➛ Permission: admin' : (role === 2 ? '➛ Permission: thread Admin' : (role === 3 ? '➛ Permission: super Admin' : '')))) : '';
-        const aliasesMessage = aliases.length ? `Aliases: ${aliases.join(', ')}\n` : '';
-        const descriptionMessage = description ? `Description: ${description}\n` : '';
-        const usageMessage = usage ? `Usage: ${usage}\n` : '';
-        const creditsMessage = credits ? `Credits: ${credits}\n` : '';
-        const versionMessage = version ? `Version: ${version}\n` : '';
-        const cooldownMessage = cooldown ? `Cooldown: ${cooldown} second(s)\n` : '';
-        const message = ` Command Information\n\n➛ Name: ${name}\n${versionMessage}${roleMessage}\n${aliasesMessage}${descriptionMessage}${usageMessage}${creditsMessage}${cooldownMessage}`;
+        const roleMessage = role !== undefined ? (role === 0 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: User' : (role === 1 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Admin' : (role === 2 ? '➛ 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Thread Admin' : (role === 3 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Super Admin' : '')))) : '';
+        const aliasesMessage = aliases.length ? `• 𝗔𝗹𝗶𝗮𝘀𝗲𝘀: ${aliases.join(', ')}\n` : '';
+        const descriptionMessage = description ? `• 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: ${description}\n` : '';
+        const usageMessage = usage ? `• 𝗨𝘀𝗮𝗴𝗲: ${usage}\n` : '';
+        const creditsMessage = credits ? `• 𝗖𝗿𝗲𝗱𝗶𝘁𝘀: ${credits}\n` : '';
+        const versionMessage = version ? `• 𝗩𝗲𝗿𝘀𝗶𝗼𝗻: ${version}\n` : '';
+        const cooldownMessage = cooldown ? `• 𝗖𝗼𝗼𝗹𝗱𝗼𝘄𝗻: ${cooldown} second(s)\n` : '';
+        const message = ` Command Information\n\n• 𝗡𝗮𝗺𝗲: ${name}\n${versionMessage}${roleMessage}\n${aliasesMessage}${descriptionMessage}${usageMessage}${creditsMessage}${cooldownMessage}`;
         api.sendMessage(message, event.threadID, event.messageID);
       } else {
         api.sendMessage('Command not found.', event.threadID, event.messageID);
