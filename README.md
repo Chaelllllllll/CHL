@@ -15,3 +15,12 @@ Welcome to **CHL Assist**!
 - **`poli`**: Generate images based on your prompts. Unleash creativity and create visual content effortlessly.
 - **`tiktok`**: Download TikTok videos using links. Save your favorite content for offline viewing.
 - **And more**: Explore additional commands and functionalities designed to provide a wide range of uses.
+
+## **Credits**
+
+**CHL Assist** is developed and maintained by:
+
+- **[Chael]([https://github.com/your-username](https://www.facebook.com/chaelyoooo/))**: Lead Developer and Creator of **CHL Assist**. Responsible for designing and implementing all features, as well as managing the overall project.
+
+Thank you for your support and interest in **CHL Assist**!
+
