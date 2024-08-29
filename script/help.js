@@ -64,7 +64,7 @@ module.exports.run = async function({
           cooldown,
           hasPrefix
         } = command;
-        const roleMessage = role !== undefined ? (role === 0 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: User' : (role === 1 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Admin' : (role === 2 ? '➛ 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Thread Admin' : (role === 3 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Super Admin' : '')))) : '';
+        const roleMessage = role !== undefined ? (role === 0 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: User' : (role === 1 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Admin' : (role === 2 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Thread Admin' : (role === 3 ? '• 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: Super Admin' : '')))) : '';
         const aliasesMessage = aliases.length ? `• 𝗔𝗹𝗶𝗮𝘀𝗲𝘀: ${aliases.join(', ')}\n` : '';
         const descriptionMessage = description ? `• 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: ${description}\n` : '';
         const usageMessage = usage ? `• 𝗨𝘀𝗮𝗴𝗲: ${usage}\n` : '';

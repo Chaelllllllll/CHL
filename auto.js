@@ -499,4 +499,3 @@ async function createDatabase() {
   return database;
 }
 main()
-              

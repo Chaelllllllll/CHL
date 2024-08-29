@@ -83,7 +83,7 @@
     "time": 506
   },
   {
-    "userid": "61564983274250",
+    "userid": "61565414120890",
     "prefix": "!",
     "admin": [
       ""
@@ -109,6 +109,95 @@
         ]
       }
     ],
-    "time": 138
+    "time": 1185
+  },
+  {
+    "userid": "61565414120890",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "baybayin",
+          "help",
+          "music",
+          "out",
+          "poli",
+          "remini",
+          "tiktok",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 1185
+  },
+  {
+    "userid": "61565414120890",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "baybayin",
+          "help",
+          "music",
+          "out",
+          "poli",
+          "tiktok",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 1185
+  },
+  {
+    "userid": "61565414120890",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "aiv2",
+          "baybayin",
+          "help",
+          "music",
+          "out",
+          "poli",
+          "tiktok",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 1185
   }
 ]
