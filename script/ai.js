@@ -23,7 +23,7 @@ module.exports.run = async function({ api, event, args }) {
     return;
   }
 
-  const ask = ["who made you", "who created you", "who is your creator", "who is your developer", "who is your owner", "sino ka", "sino gumawa sayo"];
+  const ask = ["who made you", "who created you", "who is your creator", "who is your developer", "who is your owner", "sino ka", "sino gumawa sayo", "who are you", "who developed you", "who develop you"];
 
   if (ask.includes(input.toLowerCase())) {
     api.sendMessage("Hi, I was made by Chael! https://www.facebook.com/chaelyoooo/", event.threadID, event.messageID);
