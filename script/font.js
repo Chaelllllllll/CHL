@@ -7,7 +7,7 @@ module.exports.config = {
   usePrefix: true,
   aliases: ['font'],
   description: "Translates text into various fonts",
-  usages: "font [text] [font]",
+  usages: "font [text] | [font]",
   credits: 'Chael',
   cooldowns: 3,
   dependencies: {
@@ -17,11 +17,11 @@ module.exports.config = {
 
 module.exports.run = async function({ api, event, args }) {
   const input = args.join(' ').split('|');
-  const text = input[0].trim();
+  const text = input[0].trim(); 
   const font = input[1] ? input[1].trim() : 'sansbold';
 
   if (!text) {
-    api.sendMessage(`Please provide text to translate. Usage: 'font [text] [font]'`, event.threadID, event.messageID);
+    api.sendMessage(`Please provide text to translate. Usage: 'font [text] | [font]'`, event.threadID, event.messageID);
     return;
   }
 
@@ -38,9 +38,7 @@ module.exports.run = async function({ api, event, args }) {
     const { data } = await axios.get(url);
 
     if (data && data.converted_text) {
-      api.sendMessage(`Converted Text`, event.threadID, event.messageID);
       api.sendMessage(`${data.converted_text}`, event.threadID, event.messageID);
-      api.sendMessage(`Font Used: ${data.font_used}`, event.threadID, event.messageID);
     } else {
       api.sendMessage('Failed to convert the text.', event.threadID, event.messageID);
     }
