@@ -21,7 +21,7 @@ module.exports.run = async ({ api, event, args }) => {
 
     api.sendMessage(`Searching for ${query}`, threadID, messageID);
 
-    const response = await axios.get(`https://pinte-hiroshi-api.vercel.app/pinterest?search=${encodeURIComponent(query)}&amount=50`);
+    const response = await axios.get(`https://pinte-hiroshi-api.vercel.app/pinterest?search=${encodeURIComponent(query)}&amount=10`);
     const images = response.data.data;
 
     if (images.length === 0) {
@@ -29,12 +29,14 @@ module.exports.run = async ({ api, event, args }) => {
     }
 
     const attachments = [];
+    const filePaths = [];
 
     for (let i = 0; i < images.length; i++) {
       const imageUrl = images[i];
       const time = new Date();
       const timestamp = time.toISOString().replace(/[:.]/g, "-");
       const imagePath = path.join(__dirname, `/cache/${timestamp}_pinterest_${i}.png`);
+      filePaths.push(imagePath);
 
       const imageResponse = await axios.get(imageUrl, { responseType: "arraybuffer" });
       fs.writeFileSync(imagePath, Buffer.from(imageResponse.data, "binary"));
@@ -46,7 +48,12 @@ module.exports.run = async ({ api, event, args }) => {
       body: "Results",
       attachment: attachments
     }, threadID, () => {
-      attachments.forEach((file) => fs.unlinkSync(file.path));
+      // Delete all files after the message is sent
+      filePaths.forEach((filePath) => {
+        fs.unlink(filePath, (err) => {
+          if (err) console.error(`Failed to delete file ${filePath}: ${err.message}`);
+        });
+      });
     });
 
   } catch (error) {
