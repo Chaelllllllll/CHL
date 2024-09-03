@@ -21,17 +21,22 @@ module.exports.run = async ({ api, event, args }) => {
 
     api.sendMessage(`Searching for ${query}`, threadID, messageID);
 
-    const response = await axios.get(`https://pinte-hiroshi-api.vercel.app/pinterest?search=${encodeURIComponent(query)}&amount=10`);
+    // Fetch 100 images
+    const response = await axios.get(`https://pinte-hiroshi-api.vercel.app/pinterest?search=${encodeURIComponent(query)}&amount=100`);
     const images = response.data.data;
 
     if (images.length === 0) {
       return api.sendMessage("No images found.", threadID, messageID);
     }
 
+    // Shuffle and pick 12 random images
+    const shuffledImages = images.sort(() => 0.5 - Math.random());
+    const selectedImages = shuffledImages.slice(0, 12);
+
     const attachments = [];
 
-    for (let i = 0; i < images.length; i++) {
-      const imageUrl = images[i];
+    for (let i = 0; i < selectedImages.length; i++) {
+      const imageUrl = selectedImages[i];
       const time = new Date();
       const timestamp = time.toISOString().replace(/[:.]/g, "-");
       const imagePath = path.join(__dirname, `/cache/${timestamp}_pinterest_${i}.png`);
@@ -43,7 +48,7 @@ module.exports.run = async ({ api, event, args }) => {
     }
 
     api.sendMessage({
-      body: "Results",
+      body: 'Here are the images from Pinterest: Prompt: ${query}!',
       attachment: attachments
     }, threadID, () => {
       attachments.forEach((file) => fs.unlinkSync(file.path));
