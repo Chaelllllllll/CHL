@@ -23,14 +23,18 @@ module.exports.run = async function({ api, event, args }) {
     return;
   }
 
-  try {
-    const url = `https://mota-dev.x10.bz/ai?prompt=${encodeURIComponent(input)}&name=${encodeURIComponent(event.senderID)}`;
+  const ask = ["who made you", "who created you", "who is your creator", "who is your developer", "who is your owner", "sino ka", "sino gumawa sayo"];
 
-    const { data } = await axios.get(url);
-
-    api.sendMessage(`${data.reply}`, event.threadID, event.messageID);
-
-  } catch {
-    api.sendMessage('An error occurred while processing your request.', event.threadID, event.messageID);
+  if (ask.includes(input.toLowerCase())) {
+    api.sendMessage("Hi, I was made by Chael! https://www.facebook.com/chaelyoooo/", event.threadID, event.messageID);
+    return;
+  } else {
+    try {
+      const url = `https://mota-dev.x10.bz/ai?prompt=${encodeURIComponent(input)}&name=${encodeURIComponent(event.senderID)}`;
+      const { data } = await axios.get(url);
+      api.sendMessage(`${data.reply}`, event.threadID, event.messageID);
+    } catch {
+      api.sendMessage('An error occurred while processing your request.', event.threadID, event.messageID);
+    }
   }
 };
