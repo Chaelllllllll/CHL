@@ -98,35 +98,6 @@
           "music",
           "out",
           "poli",
-          "tiktok",
-          "unsend"
-        ]
-      },
-      {
-        "handleEvent": [
-          "antiout",
-          "resend"
-        ]
-      }
-    ],
-    "time": 1185
-  },
-  {
-    "userid": "61565414120890",
-    "prefix": "!",
-    "admin": [
-      ""
-    ],
-    "blacklist": [],
-    "enableCommands": [
-      {
-        "commands": [
-          "ai",
-          "baybayin",
-          "help",
-          "music",
-          "out",
-          "poli",
           "remini",
           "tiktok",
           "unsend"
@@ -139,7 +110,7 @@
         ]
       }
     ],
-    "time": 1185
+    "time": 1319
   },
   {
     "userid": "61565414120890",
@@ -168,7 +139,7 @@
         ]
       }
     ],
-    "time": 1185
+    "time": 1319
   },
   {
     "userid": "61565414120890",
@@ -198,6 +169,95 @@
         ]
       }
     ],
-    "time": 1185
+    "time": 1319
+  },
+  {
+    "userid": "61565414120890",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "aiv2",
+          "baybayin",
+          "help",
+          "out",
+          "poli",
+          "sing",
+          "tiktok",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 1319
+  },
+  {
+    "userid": "61565414120890",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "aiv2",
+          "baybayin",
+          "help",
+          "out",
+          "poli",
+          "sing",
+          "tiktok",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 1319
+  },
+  {
+    "userid": "61565414120890",
+    "prefix": "!",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "ai",
+          "baybayin",
+          "help",
+          "out",
+          "poli",
+          "sing",
+          "tiktok",
+          "unsend"
+        ]
+      },
+      {
+        "handleEvent": [
+          "antiout",
+          "resend"
+        ]
+      }
+    ],
+    "time": 0
   }
 ]

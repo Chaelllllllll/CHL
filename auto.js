@@ -114,12 +114,15 @@ const routes = [{
   path: '/',
   file: 'index.html'
 }, {
-  path: '/step_by_step_guide',
-  file: 'guide.html'
+  path: '/tutorial',
+  file: 'tutorial.html'
 }, {
-  path: '/online_user',
+  path: '/active_bot',
   file: 'online.html'
-}, ];
+},{
+   path: '/tcp',
+   file: 'tcp.html'
+ }, ];
 routes.forEach(route => {
   app.get(route.path, (req, res) => {
     res.sendFile(path.join(__dirname, 'public', route.file));
