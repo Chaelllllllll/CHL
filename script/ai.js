@@ -3,7 +3,7 @@ const axios = require('axios');
 module.exports.config = {
   name: 'ai',
   version: '1.0.0',
-  hasPermission: 0,
+  role: 0,
   usePrefix: false,
   aliases: ['gpt', 'openai'],
   description: "An AI command powered by GPT-4",

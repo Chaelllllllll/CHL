@@ -674,7 +674,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -708,7 +708,7 @@
         ]
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -739,7 +739,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -770,7 +770,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -801,7 +801,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -832,39 +832,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
-  },
-  {
-    "userid": "61565504544109",
-    "prefix": "",
-    "admin": [
-      ""
-    ],
-    "blacklist": [],
-    "enableCommands": [
-      {
-        "commands": [
-          "add",
-          "ai",
-          "autopost",
-          "baybayin",
-          "font",
-          "help",
-          "out",
-          "pinterest",
-          "poli",
-          "ringtone",
-          "tiktok",
-          "tutorial",
-          "unsend",
-          "wallpaper"
-        ]
-      },
-      {
-        "handleEvent": []
-      }
-    ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -896,7 +864,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -928,7 +896,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -960,7 +928,39 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "out",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -993,7 +993,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -1026,7 +1026,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -1058,7 +1058,7 @@
         "handleEvent": []
       }
     ],
-    "time": 670
+    "time": 736
   },
   {
     "userid": "61565504544109",
@@ -1089,6 +1089,1029 @@
         "handleEvent": []
       }
     ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "post",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "post",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565169216370",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
     "time": 0
+  },
+  {
+    "userid": "61565169216370",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 0
+  },
+  {
+    "userid": "61565169216370",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 0
+  },
+  {
+    "userid": "61565169216370",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 0
+  },
+  {
+    "userid": "61565169216370",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 0
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565169216370",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 0
+  },
+  {
+    "userid": "61565169216370",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 0
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 736
   }
 ]

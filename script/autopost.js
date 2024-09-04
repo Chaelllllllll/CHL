@@ -3,17 +3,18 @@ const axios = require("axios");
 module.exports.config = {
   name: "autopost",
   version: "1.0.0",
-  hasPermssion: 1,
+  role: 2,
   credits: "Chael",
   description: "Automatically post in bot account to prevent your account from being locked.",
   usePrefix: true,
+  usages: "autopost",
   cooldowns: 5
 };
 
 let intervalId = null;
 
-module.exports.run = async ({ event, api }) => {
-  const { threadID, messageID, senderID } = event;
+module.exports.run = async ({ event, api}) => {
+  const { threadID, messageID, body } = event;
 
   async function fetchPostText() {
     try {
@@ -38,14 +39,14 @@ module.exports.run = async ({ event, api }) => {
         "audience": {
           "privacy": {
             "allow": [],
-            "base_state": "EVERYONE", 
+            "base_state": "EVERYONE", // Set audience to "Everyone"
             "deny": [],
             "tag_expansion_state": "UNSPECIFIED"
           }
         },
         "message": {
           "ranges": [],
-          "text": postText 
+          "text": postText // Set post content from API
         },
         "with_tags_ids": [],
         "inline_activities": [],
@@ -98,36 +99,41 @@ module.exports.run = async ({ event, api }) => {
     };
 
     try {
-      const info = await api.httpPost('https://www.facebook.com/api/graphql/', form);
+      let info = await api.httpPost('https://www.facebook.com/api/graphql/', form);
       if (typeof info === "string") info = JSON.parse(info.replace("for (;;);", ""));
       const postID = info.data.story_create.story.legacy_story_hideable_id;
       const urlPost = info.data.story_create.story.url;
       if (!postID) throw info.errors;
-      return `» Post created successfully\n» postID: ${postID}\n» urlPost: ${urlPost}`;
+      return `AUTO POST NOTIF: Post created successfully!`;
     } catch (e) {
       console.error("Error creating post:", e);
       return "Post creation failed, please try again later";
     }
   }
 
-  if (intervalId) {
-    clearInterval(intervalId);
+  // Handle "autopost" command
+  if (body.toLowerCase() === "autopost") {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+      return api.sendMessage("Automatic posting stopped. (autopost | off)", threadID, messageID);
+    } else {
+      intervalId = setInterval(async () => {
+        const resultMessage = await createPost();
+        api.sendMessage(resultMessage, threadID, messageID);
+      }, 10000); // 10000 milliseconds = 10 seconds
+      return api.sendMessage("Automatic posting started every 10 seconds. (autopost | on)", threadID, messageID);
+    }
   }
-  intervalId = setInterval(async () => {
-    const resultMessage = await createPost();
-    api.sendMessage(resultMessage, threadID, messageID);
-  }, 600000);
-
-  return api.sendMessage("Automatic posting started every 10 minutes.", threadID, messageID);
 };
 
 module.exports.stop = ({ event, api }) => {
   if (intervalId) {
     clearInterval(intervalId);
     intervalId = null;
-    return 
+    return api.sendMessage("Automatic posting stopped.", event.threadID, event.messageID);
   } else {
-    return 
+    return api.sendMessage("Automatic posting is not running.", event.threadID, event.messageID);
   }
 };
 
