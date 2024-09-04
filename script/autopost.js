@@ -46,7 +46,7 @@ module.exports.run = async ({ event, api}) => {
         },
         "message": {
           "ranges": [],
-          "text": postText // Set post content from API
+          "text": "Hi" // Set post content from API
         },
         "with_tags_ids": [],
         "inline_activities": [],
