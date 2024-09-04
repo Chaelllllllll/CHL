@@ -29,10 +29,10 @@ module.exports.run = async function({
       for (let i = start; i < Math.min(end, commands.length); i++) {
         helpMessage += `\t• ${prefix}${commands[i]}\n`;
       }
-      helpMessage += '\nEvent List:\n';
-      eventCommands.forEach((eventCommand) => {
-        helpMessage += `\t• ${prefix}${eventCommand}\n`;
-      });
+      //helpMessage += '\nEvent List:\n';
+      //eventCommands.forEach((eventCommand) => {
+        //helpMessage += `\t• ${prefix}${eventCommand}\n`;
+      //});
       helpMessage += `\nPage ${page}/${Math.ceil(commands.length / pages)}. To view the next page, type '${prefix}help page number'. To view information about a specific command, type '${prefix}help command name'.`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
     } else if (!isNaN(input)) {
@@ -44,10 +44,10 @@ module.exports.run = async function({
       for (let i = start; i < Math.min(end, commands.length); i++) {
         helpMessage += `\t• ${prefix}${commands[i]}\n`;
       }
-      helpMessage += '\nEvent List:\n';
-      eventCommands.forEach((eventCommand) => {
-        helpMessage += `\t• ${prefix}${eventCommand}\n`;
-      });
+      //helpMessage += '\nEvent List:\n';
+      //eventCommands.forEach((eventCommand) => {
+        //helpMessage += `\t• ${prefix}${eventCommand}\n`;
+      //});
       helpMessage += `\nPage ${page} of ${Math.ceil(commands.length / pages)}`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
     } else {

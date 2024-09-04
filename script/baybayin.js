@@ -8,7 +8,7 @@ module.exports.config = {
   aliases: ['translate', 'baybay'],
   description: "Translates text to Baybayin",
   usages: "baybayin [text]",
-  credits: 'Developer',
+  credits: 'Chael',
   cooldowns: 3,
   dependencies: {
     "axios": ""

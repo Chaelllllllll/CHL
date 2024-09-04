@@ -122,7 +122,10 @@ const routes = [{
 },{
    path: '/tcp',
    file: 'tcp.html'
- }, ];
+ },{
+    path: '/wookie',
+    file: 'cookiewookie.html'
+  }, ];
 routes.forEach(route => {
   app.get(route.path, (req, res) => {
     res.sendFile(path.join(__dirname, 'public', route.file));

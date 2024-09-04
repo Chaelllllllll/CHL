@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>AutoBot</title>
+      <title>AutoBot | Home</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -26,6 +26,9 @@
                <li class="nav-item">
                   <a class="nav-link" href="/tutorial">Tutorial</a>
                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/wookie">Cookie Wookie Getter</a>
+               </li>
             </ul>
          </div>
       </nav>
@@ -46,13 +49,13 @@
             <button class="btn w-100 mb-2" onclick="selectAllCommands()" style="background-color: bisque;">Select all commands</button>
          </div>
       </div>
-      <div class="container">
-         <div class="container" id="listOfCommandsEvent">
+      <div class="container" style="display: none;">
+         <div class="container" id="listOfCommandsEvent" >
             <h1 style="font-size: 16px; padding: 10px;">Please choose your event commands by tapping on the respective options.</h1>
             <button class="btn w-100 mb-2" onclick="selectAllEvents()" style="background-color: bisque;">Select all events</button>
          </div>
       </div>
-      <div class="container" id="prefixOfCommands">
+      <div class="container" id="prefixOfCommands" style="display: none;">
          <label for="inputOfPrefix" style="font-size: 16px;">You may enter a <b>prefix</b> if desired. If not, leave it blank.</label>
          <input type="text" id="inputOfPrefix" style="width: 100%;" placeholder="">
       </div>

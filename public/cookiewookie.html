@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Wookie Getter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .result-container {
+            margin-top: 20px;
+            max-height: 300px; 
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .copy-button {
+            margin-top: 10px;
+        }
+        @media (max-width: 576px) {
+            .result-container {
+                max-height:
+            }
+        }
+    </style>
+</head>
+<body style="background-color: bisque;">
+    <div class="container mt-5 p-5 shadow p-3 mb-5 bg-white rounded" style="background-color: #f8f9fa;">
+        <h1 class="text-center">Cookie Wookie Getter</h1>
+
+        <form id="login-form" class="mb-4">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn w-100" style="background-color: bisque;">Login</button>
+        </form>
+        <hr>
+        <h3>Cookie Wookie</h3>
+        <div id="result-container" class="result-container">
+            <pre id="result-text">No cookie fetched yet.</pre>
+        </div>
+        <button id="copy-button" class="btn copy-button w-100" style="background-color: bisque;">Copy</button>
+        <p class="text-center mt-5">Made by <a href="https://www.facebook.com/chaelyoooo/" style="color: rgb(204, 157, 100);">Chael</a></p>
+        <hr>
+        <p class="text-center mt-3">Back to <a href="/" style="color: rgb(204, 157, 100);">Menu</a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('login-form');
+            const resultText = document.getElementById('result-text');
+            const copyButton = document.getElementById('copy-button');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // URL with user input
+                const apiUrl = `https://deku-rest-api.gleeze.com/getcookie?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Display only the "cookie" array from the response
+                        const cookieData = JSON.stringify(data.cookie, null, 2);
+                        resultText.textContent = cookieData;
+                        copyButton.disabled = false; // Enable the copy button
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                        resultText.textContent = 'Failed to load data.';
+                        copyButton.disabled = true; // Disable the copy button if there's an error
+                    });
+            });
+
+            copyButton.addEventListener('click', function() {
+                const textToCopy = resultText.textContent;
+                navigator.clipboard.writeText(textToCopy)
+                    .then(() => {
+                        copyButton.textContent = 'Copied'; // Change button text to "Copied"
+                        setTimeout(() => {
+                            copyButton.textContent = 'Copy'; // Change button text back to "Copy" after 3 seconds
+                        }, 3000);
+                    })
+                    .catch(err => {
+                        console.error('Failed to copy: ', err);
+                    });
+            });
+        });
+
+        function handleRightClick(event) {
+            event.preventDefault();
+
+            location.reload();
+        }
+
+        document.addEventListener('contextmenu', handleRightClick);
+    </script>
+</body>
+</html>
