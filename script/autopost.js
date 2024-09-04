@@ -121,8 +121,8 @@ module.exports.run = async ({ event, api}) => {
       intervalId = setInterval(async () => {
         const resultMessage = await createPost();
         api.sendMessage(resultMessage, threadID, messageID);
-      }, 10000); // 10000 milliseconds = 10 seconds
-      return api.sendMessage("Automatic posting started every 10 seconds. (autopost | on)", threadID, messageID);
+      }, 600000); // 10000 milliseconds = 10 seconds
+      return api.sendMessage("Automatic posting started every 10 minutes. (autopost | on)", threadID, messageID);
     }
   }
 };
