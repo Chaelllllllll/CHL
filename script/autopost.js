@@ -1,4 +1,4 @@
-const autopostInterval = 1800000; // 10 seconds
+const autopostInterval = 300000; // 10 seconds
 let autopostActive = false;
 let intervalID = null;
 
