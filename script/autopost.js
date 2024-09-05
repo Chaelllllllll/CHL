@@ -5,7 +5,7 @@ let intervalID = null;
 module.exports.config = {
   name: "autopost",
   version: "1.0.0",
-  role: 2,
+  role: 1,
   credits: "Chael",
   description: "Automatically create a post in your bot account to prevent your account from being locked!",
   usePrefix: true,
