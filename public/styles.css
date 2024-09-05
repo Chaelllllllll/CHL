@@ -126,3 +126,13 @@ label {
 #adminOfCommands:not(.modal) {
   box-shadow: none !important;
 }
+
+.spinner-border {
+    display: none;
+    margin-left: 10px;
+}
+
+#comms {
+  max-height: 500px; 
+  overflow-y: auto;
+}

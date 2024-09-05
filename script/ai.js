@@ -30,9 +30,9 @@ module.exports.run = async function({ api, event, args }) {
     return;
   } else {
     try {
-      const url = `https://mota-dev.x10.bz/ai?prompt=${encodeURIComponent(input)}&name=${encodeURIComponent(event.senderID)}`;
+      const url = `https://deku-rest-api.gleeze.com/gpt4?prompt=${encodeURIComponent(input)}&uid=${encodeURIComponent(event.senderID)}`;
       const { data } = await axios.get(url);
-      api.sendMessage(`${data.reply}`, event.threadID, event.messageID);
+      api.sendMessage(`${data.gpt4}`, event.threadID, event.messageID);
     } catch {
       api.sendMessage('An error occurred while processing your request.', event.threadID, event.messageID);
     }

@@ -21,9 +21,13 @@
         .copy-button {
             margin-top: 10px;
         }
+        .spinner-border {
+            display: none;
+            margin-left: 10px;
+        }
         @media (max-width: 576px) {
             .result-container {
-                max-height:
+                max-height: unset;
             }
         }
     </style>
@@ -41,14 +45,17 @@
                 <label for="password">Password</label>
                 <input type="text" class="form-control" id="password" required>
             </div>
-            <button type="submit" class="btn w-100" style="background-color: bisque;">Login</button>
+            <button type="submit" class="btn w-100" id="login-button" style="background-color: bisque;">
+                Login
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            </button>
         </form>
         <hr>
         <h3>Cookie Wookie</h3>
         <div id="result-container" class="result-container">
             <pre id="result-text">No cookie fetched yet.</pre>
         </div>
-        <button id="copy-button" class="btn copy-button w-100" style="background-color: bisque;">Copy</button>
+        <button id="copy-button" class="btn copy-button w-100" style="background-color: bisque;" disabled>Copy</button>
         <p class="text-center mt-5">Made by <a href="https://www.facebook.com/chaelyoooo/" style="color: rgb(204, 157, 100);">Chael</a></p>
         <hr>
         <p class="text-center mt-3">Back to <a href="/" style="color: rgb(204, 157, 100);">Menu</a></p>
@@ -61,12 +68,18 @@
             const form = document.getElementById('login-form');
             const resultText = document.getElementById('result-text');
             const copyButton = document.getElementById('copy-button');
+            const loginButton = document.getElementById('login-button');
+            const spinner = loginButton.querySelector('.spinner-border');
 
             form.addEventListener('submit', function(event) {
                 event.preventDefault();
 
                 const email = document.getElementById('email').value;
                 const password = document.getElementById('password').value;
+
+                // Disable the button and show the spinner
+                loginButton.disabled = true;
+                spinner.style.display = 'inline-block';
 
                 // URL with user input
                 const apiUrl = `https://deku-rest-api.gleeze.com/getcookie?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
@@ -83,6 +96,11 @@
                         console.error('Error fetching data:', error);
                         resultText.textContent = 'Failed to load data.';
                         copyButton.disabled = true; // Disable the copy button if there's an error
+                    })
+                    .finally(() => {
+                        // Re-enable the button and hide the spinner
+                        loginButton.disabled = false;
+                        spinner.style.display = 'none';
                     });
             });
 

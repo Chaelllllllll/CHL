@@ -1,88 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>AutoBot | Home</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg navbar-light">
-         <a class="navbar-brand" href="/">AUTO BOT</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 70px;">
+<head>
+    <title>AutoBot | Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">AUTO BOT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 70px;">
             <ul class="navbar-nav">
-               <li class="nav-item active">
-                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/active_bot">Active Bot Account</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/tutorial">Tutorial</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/wookie">Cookie Wookie Getter</a>
-               </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/active_bot">Active Bot Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tutorial">Tutorial</a>
+                </li>
             </ul>
-         </div>
-      </nav>
-      <div class="container">
-         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">Cookie</h1>
-         <form id="json-form" onsubmit="submitForm(event)">
-            <div class="row">
-               <div class="col-md-12">
-                  <textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder=""></textarea>
-               </div>
+        </div>
+    </nav>
+    <div class="container" id="login-form-container">
+        <h1 class="col text-center" style="font-size: 20px; padding: 10px;">Log in to your Facebook account (make sure the account you are using is a dummy account)</h1>
+        <form id="login-form" class="mb-4">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" required>
             </div>
-         </form>
-         <p style="font-size: 20px; margin-top: 30px; text-align: center; font-style: italic;">Paste your cookie here, or click <a href="/tutorial" style="color: rgb(224, 189, 145);">this</a> to navigate in tutorial tab.</p>
-      </div>
-      <div class="container">
-         <div class="container" id="listOfCommands">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn w-100" id="login-button" style="background-color: bisque;">
+                Login
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            </button>
+        </form>
+    </div>
+    <div class="container">
+        <h1 class="col text-center" style="font-size: 20px; padding: 10px;">Cookie</h1>
+        <form id="json-form" onsubmit="submitForm(event)">
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder=""></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container" id='comms'>
+        <div id="listOfCommands">
             <h1 style="font-size: 16px; padding: 10px;">Please choose your commands by tapping on the respective options.</h1>
             <button class="btn w-100 mb-2" onclick="selectAllCommands()" style="background-color: bisque;">Select all commands</button>
-         </div>
-      </div>
-      <div class="container" style="display: none;">
-         <div class="container" id="listOfCommandsEvent" >
+        </div>
+    </div>
+    <div class="container" style="display: none;">
+        <div id="listOfCommandsEvent">
             <h1 style="font-size: 16px; padding: 10px;">Please choose your event commands by tapping on the respective options.</h1>
             <button class="btn w-100 mb-2" onclick="selectAllEvents()" style="background-color: bisque;">Select all events</button>
-         </div>
-      </div>
-      <div class="container" id="prefixOfCommands" style="display: none;">
-         <label for="inputOfPrefix" style="font-size: 16px;">You may enter a <b>prefix</b> if desired. If not, leave it blank.</label>
-         <input type="text" id="inputOfPrefix" style="width: 100%;" placeholder="">
-      </div>
-      <div class="container" id="adminOfCommands">
-         <label for="inputOfAdmin" style="font-size: 16px;"">You may provide a <b>UID</b> if you wish. If not, leave it blank.</label>
-         <input type="text" id="inputOfAdmin" style="width: 100%;">
-      </div>
+        </div>
+    </div>
+    <div class="container" id="prefixOfCommands" style="display: none;">
+        <label for="inputOfPrefix" style="font-size: 16px;">You may enter a <b>prefix</b> if desired. If not, leave it blank.</label>
+        <input type="text" id="inputOfPrefix" style="width: 100%;" placeholder="">
+    </div>
+    <div class="container" id="adminOfCommands">
+        <label for="inputOfAdmin" style="font-size: 16px;">You may provide a <b>UID</b> if you wish. If not, leave it blank.</label>
+        <input type="text" id="inputOfAdmin" style="width: 100%;">
+    </div>
+    <div class="container">
+        <label style="font-size: 14px; display: flex; align-items: center; padding: 22px;">
+            <input type="checkbox" id="agreeCheckbox" style="margin-right: 10px;"> By checking this box, I confirm that I have read, understood, and agreed to the <a href="/tcp" style="color: rgb(224, 189, 145);">Terms and Conditions</a>
+        </label>
+        <div class="col text-center">
+            <button class="btn w-100" onclick="State()" disabled id="submitButton" style="background-color: bisque;">Submit</button>
+        </div>
+    </div>
+    <div id="result" class="container text-center" style="display: none;"></div>
+    <div class="footer" style="display: none;">
+        <p>Time: <span id="time"></span></p>
+        <p>Ping: <span id="ping"></span></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('login-form');
+            const loginButton = document.getElementById('login-button');
+            const spinner = loginButton.querySelector('.spinner-border');
+            let cookieInput = document.getElementById('json-data');
 
-      <div class="container">
-         <label style="font-size: 14px; display: flex; align-items: center; padding: 22px;">
-            <input type="checkbox" id="agreeCheckbox" style="margin-right: 10px;"> By checking this box, I confirm that I have read, understood, and agreed to the <a href="/tcp" style="color: rgb(224, 189, 145);">Terms and Conditions</a></label>
-            <div class="col text-center">
-               <button class="btn w-100" onclick="State()" disabled id="submitButton" style="background-color: bisque;">Submit</button>
-            </div>
-      </div>
-      
-      <div id="result" class="container text-center" style="display: none;"></div>
-      <div class="footer" style="display: none;">
-         <p>Time: <span id="time"></span>
-         </p>
-         <p>Ping: <span id="ping"></span>
-         </p>
-      </div>
-      <script src="script.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-   </body>
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Disable the button and show the spinner
+                loginButton.disabled = true;
+                spinner.style.display = 'inline-block';
+
+                // URL with user input
+                const apiUrl = `https://deku-rest-api.gleeze.com/getcookie?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Display only the "cookie" array from the response
+                        const cookieData = JSON.stringify(data.cookie, null, 2);
+                        cookieInput.value = cookieData;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                       cookieInput.value = 'Failed to load data';
+                    })
+                    .finally(() => {
+                        // Re-enable the button and hide the spinner
+                        loginButton.disabled = false;
+                        spinner.style.display = 'none';
+                    });
+            });
+        });
+
+        function handleRightClick(event) {
+            event.preventDefault();
+            location.reload();
+        }
+
+        document.addEventListener('contextmenu', handleRightClick);
+    </script>
+</body>
 </html>

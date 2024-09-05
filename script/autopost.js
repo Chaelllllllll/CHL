@@ -1,34 +1,34 @@
-const axios = require("axios");
+const autopostInterval = 60000; // 10 seconds
+let autopostActive = false;
+let intervalID = null;
 
 module.exports.config = {
   name: "autopost",
   version: "1.0.0",
   role: 2,
   credits: "Chael",
-  description: "Automatically post in bot account to prevent your account from being locked.",
+  description: "Automatically create a post in your bot account to prevent your account from being locked!",
   usePrefix: true,
-  usages: "autopost",
   cooldowns: 5
 };
 
-let intervalId = null;
+module.exports.run = async ({ event, api }) => {
+  const { threadID, messageID } = event;
 
-module.exports.run = async ({ event, api}) => {
-  const { threadID, messageID, body } = event;
-
-  async function fetchPostText() {
-    try {
-      const response = await axios.get("https://deku-rest-api.gleeze.com/dogfact");
-      return response.data.fact;
-    } catch (error) {
-      console.error("Error fetching post text:", error);
-      return "Error fetching post text.";
-    }
+  if (autopostActive) {
+    clearInterval(intervalID);
+    autopostActive = false;
+    return api.sendMessage(`AUTO POSTING STOPPED.`, threadID, messageID);
   }
 
-  async function createPost() {
-    const postText = await fetchPostText();
+  autopostActive = true;
+  intervalID = setInterval(async () => {
+    // Regenerate UUID to ensure uniqueness for each post
     const uuid = getGUID();
+
+    // Generate random text from a fixed array of words
+    const randomText = generateRandomText();
+
     const formData = {
       "input": {
         "composer_entry_point": "inline_composer",
@@ -39,14 +39,14 @@ module.exports.run = async ({ event, api}) => {
         "audience": {
           "privacy": {
             "allow": [],
-            "base_state": "EVERYONE", // Set audience to "Everyone"
+            "base_state": "EVERYONE",
             "deny": [],
             "tag_expansion_state": "UNSPECIFIED"
           }
         },
         "message": {
           "ranges": [],
-          "text": "Hi" // Set post content from API
+          "text": randomText
         },
         "with_tags_ids": [],
         "inline_activities": [],
@@ -65,7 +65,6 @@ module.exports.run = async ({ event, api}) => {
       "displayCommentsContextEnableComment": null,
       "displayCommentsContextIsAdPreview": null,
       "displayCommentsContextIsAggregatedShare": null,
-      "displayCommentsContextIsStorySet": null,
       "feedLocation": "TIMELINE",
       "feedbackSource": 0,
       "focusCommentID": null,
@@ -98,44 +97,39 @@ module.exports.run = async ({ event, api}) => {
       variables: JSON.stringify(formData)
     };
 
-    try {
-      let info = await api.httpPost('https://www.facebook.com/api/graphql/', form);
-      if (typeof info === "string") info = JSON.parse(info.replace("for (;;);", ""));
-      const postID = info.data.story_create.story.legacy_story_hideable_id;
-      const urlPost = info.data.story_create.story.url;
-      if (!postID) throw info.errors;
-      return `AUTO POST NOTIF: Post created successfully!`;
-    } catch (e) {
-      console.error("Error creating post:", e);
-      return "Post creation failed, please try again later";
-    }
-  }
+    api.httpPost('https://www.facebook.com/api/graphql/', form, (e, info) => {
+      try {
+        if (e) throw e;
+        if (typeof info === "string") info = JSON.parse(info.replace("for (;;);", ""));
+        const postID = info.data.story_create.story.legacy_story_hideable_id;
+        const urlPost = info.data.story_create.story.url;
 
-  // Handle "autopost" command
-  if (body.toLowerCase() === "autopost") {
-    if (intervalId) {
-      clearInterval(intervalId);
-      intervalId = null;
-      return api.sendMessage("Automatic posting stopped. (autopost | off)", threadID, messageID);
-    } else {
-      intervalId = setInterval(async () => {
-        const resultMessage = await createPost();
-        api.sendMessage(resultMessage, threadID, messageID);
-      }, 600000); // 10000 milliseconds = 10 seconds
-      return api.sendMessage("Automatic posting started every 10 minutes. (autopost | on)", threadID, messageID);
-    }
-  }
+        if (!postID) throw info.errors;
+
+        // Send confirmation of successful post
+        return api.sendMessage(`AUTO POST NOTIF: Post created successfully!`, threadID, messageID);
+
+      } catch (e) {
+        return api.sendMessage(`Post creation failed, please try again later`, threadID, messageID);
+      }
+    });
+  }, autopostInterval);
+
+  return api.sendMessage(`AUTO POSTING STARTED.`, threadID, messageID);
 };
 
-module.exports.stop = ({ event, api }) => {
-  if (intervalId) {
-    clearInterval(intervalId);
-    intervalId = null;
-    return api.sendMessage("Automatic posting stopped.", event.threadID, event.messageID);
-  } else {
-    return api.sendMessage("Automatic posting is not running.", event.threadID, event.messageID);
-  }
-};
+// Function to generate random text from a predefined array of words
+function generateRandomText() {
+  const words = [
+    "hi guys", "hi kumusta kayo", "hi kumusta ka naman", "hays nakakapagod pero laban lang", "kumusta kayo? sana okay lang kayo", "wag niyo kakalimutang magpahinga ha",
+    "okay lang yan, palaging may chance para bumawi", "hello, proud ako sayo!", "okay ka lang ba?", "hello, ngiti ka lang palagi ha", "hello pooo guys", "laban lang palagi haaa, proud ako sayoo",
+    "hi, incase na walang nagsabi sayo, proud na proud ako sayo!", "hi, good day everyone!", "hello pagsubok lang yan haa, kayang kaya mong lagpasan yan", "hello, smilee ka langgg", "hello pooo, goodjob dahil nalagpasan mo mga challenges ngayong araw", "hello, normal lang maging mahina minsan ha? normal lang madapa ka ha? ang importante'y babangon ka at lalaban ulit, kaya mo yan!!"
+  ];
+
+  // Pick a single random string from the array
+  const randomIndex = Math.floor(Math.random() * words.length);
+  return words[randomIndex];
+}
 
 function getGUID() {
   var sectionLength = Date.now();
