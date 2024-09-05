@@ -674,7 +674,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -705,7 +705,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -736,39 +736,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
-  },
-  {
-    "userid": "61565504544109",
-    "prefix": "",
-    "admin": [
-      ""
-    ],
-    "blacklist": [],
-    "enableCommands": [
-      {
-        "commands": [
-          "add",
-          "ai",
-          "autopost",
-          "baybayin",
-          "font",
-          "help",
-          "out",
-          "pinterest",
-          "poli",
-          "ringtone",
-          "tiktok",
-          "tutorial",
-          "unsend",
-          "wallpaper"
-        ]
-      },
-      {
-        "handleEvent": []
-      }
-    ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -800,7 +768,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -832,7 +800,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -864,7 +832,39 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "out",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -897,7 +897,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -930,7 +930,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -962,7 +962,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -993,7 +993,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1024,7 +1024,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1055,7 +1055,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1086,7 +1086,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1117,7 +1117,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1148,7 +1148,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1179,7 +1179,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1210,38 +1210,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
-  },
-  {
-    "userid": "61565504544109",
-    "prefix": "",
-    "admin": [
-      ""
-    ],
-    "blacklist": [],
-    "enableCommands": [
-      {
-        "commands": [
-          "add",
-          "ai",
-          "post",
-          "baybayin",
-          "font",
-          "help",
-          "pinterest",
-          "poli",
-          "ringtone",
-          "tiktok",
-          "tutorial",
-          "unsend",
-          "wallpaper"
-        ]
-      },
-      {
-        "handleEvent": []
-      }
-    ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1272,7 +1241,38 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      ""
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "post",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1303,7 +1303,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565169216370",
@@ -1489,7 +1489,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1520,7 +1520,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1551,7 +1551,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1582,7 +1582,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1613,7 +1613,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565169216370",
@@ -1706,7 +1706,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1737,7 +1737,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1768,7 +1768,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1799,7 +1799,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1830,7 +1830,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1861,7 +1861,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1892,7 +1892,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1923,7 +1923,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1954,7 +1954,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -1985,7 +1985,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2016,7 +2016,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2047,7 +2047,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2078,7 +2078,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2109,7 +2109,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2140,7 +2140,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565068541637",
@@ -2605,7 +2605,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2636,39 +2636,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
-  },
-  {
-    "userid": "61565504544109",
-    "prefix": "",
-    "admin": [
-      "100039747497548"
-    ],
-    "blacklist": [],
-    "enableCommands": [
-      {
-        "commands": [
-          "add",
-          "ai",
-          "autopost",
-          "baybayin",
-          "font",
-          "help",
-          "pinterest",
-          "poli",
-          "ringtone",
-          "tempmail",
-          "tiktok",
-          "tutorial",
-          "unsend",
-          "wallpaper"
-        ]
-      },
-      {
-        "handleEvent": []
-      }
-    ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2700,7 +2668,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2732,7 +2700,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2764,7 +2732,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2796,7 +2764,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2828,7 +2796,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2860,7 +2828,39 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      "100039747497548"
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tempmail",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 3001
   },
   {
     "userid": "61565167987471",
@@ -2924,7 +2924,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2956,7 +2956,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -2988,7 +2988,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -3020,7 +3020,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -3052,7 +3052,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -3084,7 +3084,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -3116,7 +3116,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -3148,7 +3148,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -3180,7 +3180,7 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
   },
   {
     "userid": "61565504544109",
@@ -3212,7 +3212,167 @@
         "handleEvent": []
       }
     ],
-    "time": 2953
+    "time": 3001
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      "100039747497548"
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tempmail",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 3001
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      "100039747497548"
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tempmail",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 3001
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      "100039747497548"
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tempmail",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 3001
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      "100039747497548"
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tempmail",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 0
+  },
+  {
+    "userid": "61565504544109",
+    "prefix": "",
+    "admin": [
+      "100039747497548"
+    ],
+    "blacklist": [],
+    "enableCommands": [
+      {
+        "commands": [
+          "add",
+          "ai",
+          "autopost",
+          "baybayin",
+          "font",
+          "help",
+          "pinterest",
+          "poli",
+          "ringtone",
+          "tempmail",
+          "tiktok",
+          "tutorial",
+          "unsend",
+          "wallpaper"
+        ]
+      },
+      {
+        "handleEvent": []
+      }
+    ],
+    "time": 0
   },
   {
     "userid": "61565504544109",

@@ -102,15 +102,14 @@ module.exports.run = async ({ event, api }) => {
         if (e) throw e;
         if (typeof info === "string") info = JSON.parse(info.replace("for (;;);", ""));
         const postID = info.data.story_create.story.legacy_story_hideable_id;
-        const urlPost = info.data.story_create.story.url;
+        //const urlPost = info.data.story_create.story.url;
 
         if (!postID) throw info.errors;
 
-        // Send confirmation of successful post
         return api.sendMessage(`AUTO POST NOTIF: Post created successfully!`, threadID, messageID);
 
       } catch (e) {
-        return api.sendMessage(`Post creation failed, please try again later`, threadID, messageID);
+        //return console.log('Post creation failed, please try again later', e.message);
       }
     });
   }, autopostInterval);
@@ -118,7 +117,6 @@ module.exports.run = async ({ event, api }) => {
   return api.sendMessage(`AUTO POSTING STARTED.`, threadID, messageID);
 };
 
-// Function to generate random text from a predefined array of words
 function generateRandomText() {
   const words = [
     "hi guys", "hi kumusta kayo", "hi kumusta ka naman", "hays nakakapagod pero laban lang", "kumusta kayo? sana okay lang kayo", "wag niyo kakalimutang magpahinga ha",

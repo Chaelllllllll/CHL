@@ -13,16 +13,14 @@ module.exports.config = {
 };
 
 module.exports.run = async ({ api, event, args }) => {
-  if (args.length === 1 && args[0] === "genemail") {
+  if (args.length === 1 && args[0] === "email") {
     try {
-      const randomPrefix = generateRandomString(6);
-
-      const inbox = await mailslurp.createInbox({ name: randomPrefix });
+      const inbox = await mailslurp.createInbox();
       const emailAddress = inbox.emailAddress;
 
-      api.sendMessage(`Your temporary email address is: ${emailAddress}`, event.threadID);
+      api.sendMessage(`Your TempMail: ${emailAddress}`, event.threadID);
     } catch (error) {
-      api.sendMessage("An error occurred while generating the temporary email address.", event.threadID);
+      api.sendMessage("Unsuccessful, please try again later", event.threadID);
     }
   } else if (args.length === 2 && args[0] === "inbox") {
     const email = args[1];
@@ -44,7 +42,7 @@ module.exports.run = async ({ api, event, args }) => {
 
       let message = "Emails in your inbox:\n";
       for (const email of emails) {
-        message += `\n\nMessage: ${email.subject}`;
+        message += `\nMessage: ${email.subject}`;
       }
 
       api.sendMessage(message, event.senderID);
@@ -52,7 +50,6 @@ module.exports.run = async ({ api, event, args }) => {
       api.sendMessage("An error occurred while fetching inbox messages.", event.threadID);
     }
   } else {
-    api.sendMessage("Usage: tempmail genemail for a new temp email and tempmail inbox [email] to retrieve all inbox messages.", event.threadID);
+    api.sendMessage("Usage:\ntempmail email for a new temp email.\ntempmail inbox [email] to retrieve all inbox messages.", event.threadID);
   }
 };
-
