@@ -1,14 +1,14 @@
 [
   {
     "masterKey": {
-      "admin": ["61564831995575"],
+      "admin": ["61564831995575", "100039747497548"],
       "devMode": false,
       "database": false,
       "restartTime": 15
     },
     "fcaOption": {
       "forceLogin": true,
-      "listenEvents": true,
+      "listenEvents": false,
       "logLevel": "silent",
       "updatePresence": true,
       "selfListen": true,
